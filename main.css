@@ -1,0 +1,275 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+h1 {
+  all: unset;
+}
+input {
+  all: unset;
+}
+li,
+button {
+  all: unset;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
+/* .bg {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fadeIn 0.5s linear;
+  opacity: 0.6;
+  z-index: -1;
+} */
+body {
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 0.5s linear;
+}
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 100%;
+}
+.greeting {
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  margin-right: 4px;
+}
+.icon {
+  padding: 0.5rem;
+}
+.icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+.header-greeting .icon svg {
+  fill: whitesmoke;
+}
+.header-greeting {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 8px 4px;
+}
+.name {
+  background-color: white;
+  width: 150px;
+  height: 2.3rem;
+  padding: 8px 6px;
+  border-radius: 4px;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.hiding {
+  display: none;
+}
+@media all and (max-width: 768px) {
+  .greeting {
+    font-size: 1.5rem;
+  }
+  .icon {
+    padding: 0.3rem;
+  }
+  .icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .name {
+    width: 120px;
+    height: 1.8rem;
+    font-size: 1rem;
+  }
+}
+@media all and (max-width: 380px) {
+  .greeting {
+    font-size: 1.3rem;
+  }
+  .icon {
+    padding: 0.3rem;
+  }
+  .icon svg {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .name {
+    width: 110px;
+    height: 1.3rem;
+    font-size: 0.8rem;
+  }
+}
+.weather {
+  display: flex;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  justify-content: flex-end;
+  margin-right: 4px;
+  align-items: center;
+}
+
+.weather-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  margin-right: 4px;
+}
+
+.weather-icon svg {
+  fill: white;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 4px;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  margin-top: 5rem;
+}
+.clock h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+}
+@media all and (max-width: 768px) {
+  .clock {
+    margin-top: 4rem;
+  }
+  .clock h1 {
+    font-size: 3rem;
+  }
+}
+@media all and (max-width: 380px) {
+  .clock {
+    margin-top: 3rem;
+  }
+  .clock h1 {
+    font-size: 2rem;
+  }
+}
+.site-search {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.9rem;
+}
+.search {
+  background-color: white;
+  width: 400px;
+  padding: 12px 8px;
+  border-radius: 4px;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.btn-wrapper {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.change-button {
+  color: white;
+  padding: 0.5rem 0.25rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+.google .change-button {
+  background-color: #03cf5d;
+}
+.naver .change-button {
+  background-color: #4285f4;
+}
+@media all and (max-width: 768px) {
+  .search {
+    width: 350px;
+  }
+}
+@media all and (max-width: 380px) {
+  .search {
+    width: 90%;
+  }
+}
+.js-todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.todo-form {
+  display: flex;
+  justify-content: center;
+}
+.todo-input {
+  background-color: white;
+  width: 200px;
+  padding: 8px 6px;
+  border-radius: 4px;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.todo-header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0rem;
+  font-family: "Ranga", cursive;
+}
+.todo-list {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  overflow-y: scroll;
+  background-color: white;
+  opacity: 0.8;
+  padding: 0;
+}
+.todo-list li {
+  display: flex;
+  padding: 6px 4px;
+  border-bottom: 1px solid #636e72;
+  font-size: 1.1rem;
+}
+.todo-list li:nth-child(even) {
+  background-color: #2d3436;
+  color: white;
+}
+.todo-list li span {
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.todo-list button {
+  border: 1px solid #d63031;
+  padding: 4px 6px;
+  background-color: #d63031;
+  opacity: 0.8;
+}
+@media all and (max-width: 380px) {
+  .todo-list {
+    width: 240px;
+    border-radius: 4px;
+  }
+}
